@@ -98,6 +98,19 @@ footer a:hover img {
   }
 }
 
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  nav button {
+    max-width: 90vw;
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 480px) {
   nav button {
     padding: 0.5rem 0.5rem;
