@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main section {
+  max-width: 850px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(92, 70, 156, 0.12);
+}
+
+main p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}

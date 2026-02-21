@@ -1,0 +1,22 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dl-btn {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
+}
+
+#dl-btn:hover {
+  background: #5b21b6;
+  transform: translateY(-3px);
+}
