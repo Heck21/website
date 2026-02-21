@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gabarito", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to left,
+    rgba(243, 232, 255, 0.85),
+    rgba(196, 181, 253, 0.85)
+  );
+  color: #3b2f5c;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+
+nav button {
+  background: transparent;
+  border: 2px solid rgba(123, 97, 255, 0.4);
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #4c3b8f;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background: rgba(123, 97, 255, 0.15);
+  border-color: #7c3aed;
+  transform: translateY(-2px);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 8%;
+  gap: 4rem;
+}
+
+main section:first-child {
+  flex: 1;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+h2 span {
+  color: #7c3aed;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #5b4b8a;
+}
+
+main section:last-child {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+
+main img {
+  position: relative;
+  width: 75%;
+  border-radius: 20px;
+  z-index: 1;
+  box-shadow: 0 20px 40px rgba(92, 70, 156, 0.25);
+  transition: transform 0.3s ease;
+}
+
+main img:hover {
+  transform: scale(1.15);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+
+footer a {
+  background: transparent;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+footer img {
+  width: 28px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+footer a:hover img {
+  transform: scale(1.15);
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main section:last-child {
+    justify-content: center;
+    position: relative;
+  }
+
+  main img {
+    width: 60%;
+  }
+}
