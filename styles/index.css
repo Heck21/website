@@ -138,3 +138,10 @@ footer a:hover img {
     width: 60%;
   }
 }
+
+@media (max-width: 480px) {
+  nav button {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
